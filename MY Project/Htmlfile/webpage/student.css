@@ -1,0 +1,98 @@
+:root{
+    --clr:#4c79a5;
+}
+p{
+    background-color:yellow;
+}
+.navigation{
+    position: inherit;
+    top:150px;
+    left: 100px;
+    width: 390px;
+    height: 70px;
+    background: rgb(151, 83, 83);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.navigation th{
+    display: flex;
+    width: 35px;
+}
+
+.navigation th td{
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 10;
+
+}
+.navigation th td a{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+
+}
+.navigation th td a .icon{
+    position: relative;
+    display: block;
+    line-height: 85px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: var(--clr);
+
+}
+
+.navigation th td:hover a .icon{ 
+    position: absolute;
+    top: 22px;
+    left:-10px ;
+    width: 70px;
+    height: 70px;
+    background: #28fd53;
+    border-radius: 50%;
+    border: 6px solid var(--clr); 
+    transition: 0.5s;
+     transform: translateY(-55px);
+}
+.navigation th td a .text{
+   position: absolute;
+   color: var(--clr);
+   font-weight: 400;
+   font-size: 0.75em;
+   letter-spacing: 0.05em;
+   transition: 0.5s;
+   opacity: 0;
+   transform: translateY(20px);
+}
+
+.navigation th td:active a .text{
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+.navigation th td:hover a .text{
+    opacity: 100%;
+    transform: translateY(55px);
+    font-weight: bold;
+    color: black;
+    font-size: 14px;
+}
+.text:hover{
+    opacity: 100%;
+    transform: translateY(55px);
+    font-weight: bold;
+    color: black;
+    font-size: 14px;
+    border: 2px solid aquamarine;
+    border-radius:50%;
+}
